@@ -85,26 +85,26 @@ namespace Mirosoft.Utilities
             return $"{input:###,###,###,###}";
         }
 
-        public static int PeriodInDays(this int totalDays)
+        public static string PeriodInDays(this int totalDays)
         {
-            var output = 0;
-            output = totalDays / 365 * 365;
+            var output = "";
+            output = (totalDays / 365) + " year ";
             totalDays %= 365;
 
-            output += totalDays / 30 * 30;
+            output += (totalDays / 30) + " month ";
             totalDays %= 30;
 
-            output += totalDays;
+            output += totalDays + " day";
 
             return output;
         }
 
-        public static int PeriodInDays(this DateTime fromDate, DateTime toDate)
+        public static string PeriodInDays(this DateTime fromDate, DateTime toDate)
         {
             return toDate.Subtract(fromDate).TotalDays.PeriodInDays();
         }
 
-        public static int PeriodInDays(this double totalDays)
+        public static string PeriodInDays(this double totalDays)
         {
             return Convert.ToInt32(totalDays).PeriodInDays();
         }

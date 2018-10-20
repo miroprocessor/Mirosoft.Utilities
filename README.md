@@ -2,6 +2,11 @@
 This package contains the extension methods that I use almost in all .Net applications.
  Currnelty, There is only one class contains some of those extension methods but I intent to add more periodically.
 
+# Installation
+
+- nuget package    
+  ```Install-Package Mirosoft.Utilities```
+
 # Methods List
 1. **Description\<T\>**   
    It returns the value of description attribute of enum. 

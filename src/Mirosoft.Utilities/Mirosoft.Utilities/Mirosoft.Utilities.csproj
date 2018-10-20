@@ -2,6 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Version>2.0.1</Version>
+    <Authors></Authors>
+    <Description></Description>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl></RepositoryUrl>
+    <Product />
+    <Company></Company>
+    <PackageId />
   </PropertyGroup>
 
   <ItemGroup>
